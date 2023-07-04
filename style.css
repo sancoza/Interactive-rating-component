@@ -28,6 +28,9 @@ p {
 a {
     text-decoration: none;
 }
+img {
+    max-width: 100%;
+  }
 ul li {
     list-style: none;
 }
@@ -35,13 +38,18 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
 
 }
 .card {
     background: var(--DarkBlue);
     padding: 25px;
-    border-radius: 2rem;
+    border-radius: 2rem;   
+}
+.card-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .card-body {
     margin: 40px 0;
@@ -86,5 +94,36 @@ ul li a {
 
 
 ul li:hover {
-    background: var(--LightGrey);
+    background: var(--MediumGrey);
+}
+.btn {
+    background: var(--Orange);
+    color: var(--White);
+    padding: 15px;
+    display: block;
+    margin-top: 20px;
+    border-radius: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.btn:hover {
+    background: var(--White);
+    color: var(--Orange);
+}
+.active {
+    background: var(--Orange);
+  
+}
+.attribution {
+    text-align: center;
+    color: var(--MediumGrey);
+}
+.link {
+    color: var(--MediumGrey);
+    font-weight: 600;
+}
+.link:hover {
+    color: var(--Orange);
 }
