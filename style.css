@@ -69,6 +69,10 @@ ul li {
     padding: 10px 25px;
     border-radius: 2rem;
 }
+.change-rating span {
+    display: inline-block;
+    margin: 0 0.3rem;
+}
 .svg-star {
     position: absolute;
     left: 50%;
